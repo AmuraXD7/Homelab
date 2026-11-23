@@ -1,0 +1,25 @@
+# ignore everything by default
+*
+# allow directories so git can look inside them
+!*/
+# allow only config-as-code files
+!.gitignore
+!README.md
+!SECURITY.md
+!compose.yaml
+!docker-compose.yml
+!docker-compose.yaml
+!.env.example
+!Caddyfile
+!.github/**
+!scripts/**
+
+degoog/data/
+
+media/
+
+# homepage config (no secrets, hostname comes from .env)
+!homepage/config/*.yaml
+!LICENSE
+
+kavita/config/

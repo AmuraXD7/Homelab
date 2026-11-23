@@ -1,0 +1,13 @@
+services:
+  ntfy:
+    image: binwiederhier/ntfy:v2.38.1
+    container_name: ntfy
+    restart: unless-stopped
+    command: serve
+    environment:
+      NTFY_BASE_URL: https://${TS_HOSTNAME}:8091
+      NTFY_CACHE_FILE: /var/cache/ntfy/cache.db
+    ports:
+      - "127.0.0.1:8091:80"
+    volumes:
+      - ./cache:/var/cache/ntfy

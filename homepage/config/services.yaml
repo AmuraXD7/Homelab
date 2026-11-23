@@ -1,0 +1,41 @@
+- Services:
+    - Vaultwarden:
+        href: https://{{HOMEPAGE_VAR_TS_HOST}}
+        description: Password manager
+        icon: vaultwarden.png
+    - Navidrome:
+        href: https://{{HOMEPAGE_VAR_TS_HOST}}:8443
+        description: Music streaming
+        icon: navidrome.png
+    - SearXNG:
+        href: https://{{HOMEPAGE_VAR_TS_HOST}}:10000
+        description: Private metasearch
+        icon: searxng.png
+- Admin:
+    - Dockge:
+        href: https://{{HOMEPAGE_VAR_TS_HOST}}:5001
+        description: Docker stack manager
+        icon: dockge.png
+- Monitoring:
+    - Uptime Kuma:
+        href: https://{{HOMEPAGE_VAR_TS_HOST}}:3001
+        description: Service status and alerts
+        icon: uptime-kuma.png
+    - ntfy:
+        href: https://{{HOMEPAGE_VAR_TS_HOST}}:8091
+        description: Push notifications
+        icon: ntfy.png
+    - Dozzle:
+        href: https://{{HOMEPAGE_VAR_TS_HOST}}:8888
+        description: Container logs
+        icon: dozzle.png
+- Tools:
+    - CyberChef:
+        href: https://{{HOMEPAGE_VAR_TS_HOST}}:8100
+        description: Encode, decode, hash
+        icon: cyberchef.png
+- Reading:
+    - Kavita:
+        href: https://{{HOMEPAGE_VAR_TS_HOST}}:5000
+        description: Manga and books
+        icon: kavita.png
