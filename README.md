@@ -6,6 +6,8 @@ A small self-hosted stack that runs on one Linux laptop: password manager, music
 
 I built it to practice sysadmin, DevOps and security basics on real hardware (8 GB RAM, one disk) instead of a throwaway lab. The interesting parts are the design decisions and the things that broke along the way, which are written up below.
 
+![Homepage dashboard](docs/dashboard.png)
+
 ## Architecture
 
 ```mermaid
