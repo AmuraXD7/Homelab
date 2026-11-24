@@ -63,6 +63,8 @@ Tailscale terminates TLS with a certificate it issues and renews itself, so ther
 
 ## Quick start
 
+Windows users: see [docs/INSTALL-WINDOWS.md](docs/INSTALL-WINDOWS.md).
+
 Requirements: Linux with Docker and the Compose plugin, and Tailscale with HTTPS certificates enabled (admin console, DNS, Enable HTTPS).
 
 ```bash

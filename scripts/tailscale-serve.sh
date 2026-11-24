@@ -1,12 +1,16 @@
 #!/usr/bin/env bash
 # Publish each local service over Tailscale HTTPS (tailnet only, not Funnel).
 # Services listen on 127.0.0.1; Tailscale terminates TLS.
-# Usage: sudo ./scripts/tailscale-serve.sh
+#
+# Linux:                  sudo ./scripts/tailscale-serve.sh
+# WSL with Windows app:   TAILSCALE=tailscale.exe ./scripts/tailscale-serve.sh
 set -euo pipefail
+
+TS="${TAILSCALE:-tailscale}"
 
 serve() {
   # serve <tailnet-https-port> <local-port> <label>
-  tailscale serve --bg --https="$1" "http://127.0.0.1:$2" # "$3"
+  "$TS" serve --bg --https="$1" "http://127.0.0.1:$2"
   echo "published $3: tailnet :$1 -> 127.0.0.1:$2"
 }
 
@@ -21,4 +25,4 @@ serve 8091  8091 "ntfy"
 serve 8888  8888 "Dozzle"
 serve 8100  8100 "CyberChef"
 
-tailscale serve status
+"$TS" serve status
