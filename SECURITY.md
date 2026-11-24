@@ -1,6 +1,6 @@
 # Security
 
-This is a personal, single-user homelab. This document records what I am protecting, who I am protecting it from, and the controls and trade-offs in the setup. It is written so a reviewer can judge the decisions, not as a promise that the stack is hardened for production.
+This is a personal, single-user homelab made for me to practice cybersecurity and networking fundamentals. This document records what I am protecting, who I am protecting it from, and the controls and trade-offs in the setup. It is written so a reviewer can judge the decisions, not as a promise that the stack is hardened for production but feel free to contact me if there are any major flaws im not seeing or something i can improve.
 
 ## What is being protected
 
